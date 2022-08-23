@@ -9,14 +9,13 @@ public class Calc{
 public class TestCalc{
     public static main(){
     
-        Calc c;
-        c = new Calc();
-        Bool res = if(c.add(1,2) == 1+2);
-        if(res){
-            print("true");
-            return;
-        }
-        print("false");
+        public class CalcTest {
+    @Test
+    void testAddition() {
+        Calc c = new Calc();
+        assertEquals(4, c.add(2,2));
+    }
+}
         
     }
 
